@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,35 +19,35 @@
                 <th>Mod</th>
                 <th>total</th>
             </tr>
-            <tr>
+            <tr class="entry">
                 <td>força</td>
                 <td><input value="0" min="0" max="100" type="number"></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr>
+            <tr class="entry">
                 <td>destreza</td>
                 <td><input value="0" min="0" max="100" type="number"></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr>
-                <td>contituição</td>
+            <tr class="entry">
+                <td>constituição</td>
                 <td><input value="0" min="0" max="100" type="number"></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr>
+            <tr class="entry">
                 <td>inteligencia</td>
                 <td><input value="0" min="0" max="100" type="number"></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr>
+            <tr class="entry">
                 <td>sabedoria</td>
                 <td><input value="0" min="0" max="100" type="number"></td>
                 <td></td>
@@ -54,8 +55,8 @@
                 <td></td>
             </tr>
             <tr>
-                <td colspan="3"><button>Calcular</button></td>
-                <td colspan="2"><button>Reset</button></td>
+                <td colspan="3"><button onclick="setupAll()">Calcular</button></td>
+                <td colspan="2"><button onclick="window.location.reload()">Reset</button></td>
             </tr>
         </tbody>
     </table>
